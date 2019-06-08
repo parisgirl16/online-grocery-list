@@ -12,7 +12,7 @@ body {
 
 .content {
   margin: 10px auto;
-  width: 400px;
+  width: 600px;
   border: solid 2px;
   background-color: gray;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .grocery-input {
-  width: 300px;
+  width: 500px;
   margin: 25px auto 5px auto;
   padding: 5px;
   font-size: 90%;
@@ -32,7 +32,7 @@ body {
 }
 
 .submit-btn {
-  width: 300px;
+  width: 500px;
   padding: 5px;
   margin: 5px auto 25px auto;
   border: none;
