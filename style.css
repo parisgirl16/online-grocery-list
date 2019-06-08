@@ -7,14 +7,14 @@
 }
 
 body {
-  background: green;
+  background: #95FF3C;
 }
 
 .content {
   margin: 10px auto;
   width: 600px;
   border: solid 2px;
-  background-color: gray;
+  background-color: #5EB319;
 }
 
 .user-input {
@@ -43,4 +43,16 @@ body {
 .name-card {
   background: #fff;
   padding: 0;
+}
+
+@media screen and (max-width 750px) {
+  .content {
+    width: 700px;
+  }
+  .grocery-input {
+    width: 600px;
+  }
+  .submit-btn {
+    width: 600px
+  }
 }
