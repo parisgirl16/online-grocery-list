@@ -22,6 +22,3 @@ function storePlan(e) {
   e.preventDefault();
   localStorage.setItem('name-card', name-card);
 }
-
-localStorage.setItem('name-card', name-card);
-document.getElementByClass("").innerHTML = localStorage.getItem('name-card');
