@@ -22,3 +22,9 @@ function storePlan(e) {
   e.preventDefault();
   localStorage.setItem('name-card', name-card);
 }
+
+localStorage.removeItem(cardContainer);
+localStorage.setItem(cardContainer, JSON.stringify(this.array));
+
+this.array = JSON.parse(localStorage.getItem(cardContainer));
+localStorage.removeItem(cardContainer);
