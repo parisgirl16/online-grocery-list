@@ -23,8 +23,29 @@ function storePlan(e) {
   localStorage.setItem('name-card', name-card);
 }
 
-localStorage.removeItem(cardContainer);
-localStorage.setItem(cardContainer, JSON.stringify(this.array));
+import { Injectable } from '@angular/core';
 
-this.array = JSON.parse(localStorage.getItem(cardContainer));
-localStorage.removeItem(cardContainer);
+@Injectable()
+export class SharingService {
+  private storageName: string = "Settings";
+
+  constructor() { }
+
+  setSettings(data: any) {
+    localStorage.setItem(this.storageName, JSON.stringify(data));
+  }
+
+  getUserSettings() {
+    let data = localStorage.getItem(this.storageName);
+    return JSON.parse(data);
+  }
+
+  clearUserSettings() {
+    localStorage.removeItem(this.storageName);
+  }
+
+  cleanAll() {
+    localStorage.clear()
+  }
+
+}
