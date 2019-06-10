@@ -25,6 +25,13 @@ body {
   background-color: #5EB319;
 }
 
+.list {
+  margin: 10px auto;
+  width: 1000px;
+  border: solid 2px;
+  background-color: #5EB319;
+}
+
 .user-input {
   display: flex;
   flex-direction: column;
@@ -56,7 +63,6 @@ body {
 .card-container{
   text-align: left;
   padding: 2px;
-
 }
 
 @media screen and (max-width: 1000px) {

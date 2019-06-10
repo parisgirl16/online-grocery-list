@@ -33,3 +33,24 @@ function storePlan(e) {
   e.preventDefault();
   localStorage.setItem('name-card', name-card);
 }
+
+var addList = $('.add-list');
+var newList = $('.new-list')
+
+addList.on("click", addArticle)
+
+function addArticle() {
+  newList.append(
+    `<section class="list">
+      <input type="text" placeholder="Store Name" class="store-name">
+      <input type="submit" value="Change" class="change-btn">
+      <section class="user-input">
+        <input type="text" placeholder="Grocery Item" class="grocery-input">
+        <input type="submit" value="Add to List" class="submit-btn">
+      </section>
+      <h3>Grocery List</h3>
+      <section class="card-container">
+      </section>
+    </section>`
+  )
+}
