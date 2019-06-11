@@ -54,3 +54,14 @@ function addArticle() {
     </section>`
   )
 }
+
+var changeBtn = $('.change-btn');
+var header = $('h3');
+
+changeBtn.on("click", changeStore)
+
+function changeStore() {
+  var storeName = $('.store-name').val();
+  header.text(`${storeName} List`);
+  $('.store-name').val("");
+}
