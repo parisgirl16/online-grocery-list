@@ -75,11 +75,8 @@ body {
   .content {
     width: 900px;
   }
-  .grocery-input {
+  .grocery-input, .submit-btn, .store-name, .change-btn {
     width: 800px;
-  }
-  .submit-btn {
-    width: 800px
   }
 }
 
@@ -87,10 +84,7 @@ body {
   .content {
     width: 650px;
   }
-  .grocery-input {
+  .store-name, .change-btn, .grocery-input, .submit-btn {
     width: 550px;
-  }
-  .submit-btn {
-    width: 550px
   }
 }
